@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import Home from "./Pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className=''>Hello</h1>
-    </>
-  )
+    <main className="flex min-h-screen flex-col justify-between items-center">
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </main>
+  );
 }
 
-export default App
+export default App;
