@@ -19,8 +19,8 @@ const MobileNav = ({ toggleIsOpen }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1}} 
       exit={{ opacity: 0 }} 
-      className="absolute top-[60px] bg-white  w-full md:hidden"
       transition={{ duration: 0.3 }}
+      className="absolute top-[60px] bg-white  w-full lg:hidden"
       >
         <div className='flex flex-col w-full   pb-4'>
           {mapLinks}
